@@ -15,6 +15,16 @@ let recommendedMovie;
 // - If the user is "bored" AND it's "afternoon" OR "happy" AND it's "evening", recommend "Engaging Mystery Film".
 // - In all other cases, recommend "Popular Choice Film".
 
+if (mood === "tired" || timeOfDay === "night") {
+  alert ("Relaxing Ambient Film");
+} else if (mood === "excited" && timeOfDay === "morning") {
+  alert ("High-Octane Thriller");
+} else if ((mood === "bored" && timeOfDay === "afternoon") || (mood === "happy" && timeOfDay === "evening")) {
+  alert ("Enagaging Mystery Film");
+} else {
+  alert ("popuolar Choice Film")
+}
+
 
 
 // 2. Console log the recommended movie
